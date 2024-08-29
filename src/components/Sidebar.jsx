@@ -17,7 +17,7 @@ const Ul = styled.ul`
   margin-block-start: 0em;
   margin-block-end: 0em;
   padding-inline-start: 0px;
-  width: 25vw;
+  width: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
