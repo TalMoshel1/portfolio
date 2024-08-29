@@ -74,17 +74,17 @@ const Projects = (props) => {
               <Carousel style={{ width: "100%" }}>
                 <CarouselContent className="contain-image">
                   <CarouselItem>
-                    <img src={Appointment1} />
+                    <img src={Appointment1} loading="lazy" />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={Appointment2} />
+                    <img src={Appointment2} loading="lazy" />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={Appointment4} />
+                    <img src={Appointment4} loading="lazy"/>
                   </CarouselItem>
 
                   <CarouselItem>
-                    <img src={Appointment3} />
+                    <img src={Appointment3} loading="lazy"/>
                   </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious />
@@ -127,16 +127,16 @@ const Projects = (props) => {
                 <div className="swipe" style={{position:'absolute', top:'0', backgroundColor:'rgba(0, 0, 0, 0.1)', height:'10px', zIndex: '1', width:'100%'}}></div>
                 <CarouselContent>
                   <CarouselItem>
-                    <img src={MusicTrivia1} style={{ width: "100%" }} />
+                    <img src={MusicTrivia1} style={{ width: "100%" }} loading="lazy" />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={MusicTrivia2} style={{ width: "100%" }} />
+                    <img src={MusicTrivia2} style={{ width: "100%" }} loading="lazy" />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={MusicTrivia3} style={{ width: "100%" }} />
+                    <img src={MusicTrivia3} style={{ width: "100%" }} loading="lazy"/>
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={MusicTrivia4} style={{ width: "100%" }} />
+                    <img src={MusicTrivia4} style={{ width: "100%" }} loading="lazy"/>
                   </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious />
@@ -179,17 +179,17 @@ const Projects = (props) => {
 
                 <CarouselContent>
                   <CarouselItem>
-                    <img src={Weather1} style={{ width: "100%" }} />
+                    <img src={Weather1} style={{ width: "100%" }} loading="lazy" />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={Weather1Dark} style={{ width: "100%" }} />
+                    <img src={Weather1Dark} style={{ width: "100%" }} loading="lazy"/>
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={Weather2} style={{ width: "100%" }} />
+                    <img src={Weather2} style={{ width: "100%" }} loading="lazy"/>
                   </CarouselItem>
 
                   <CarouselItem>
-                    <img src={Weather2Dark} style={{ width: "100%" }} />
+                    <img src={Weather2Dark} style={{ width: "100%" }} loading="lazy"/>
                   </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious />
@@ -229,17 +229,17 @@ const Projects = (props) => {
               <Carousel style={{ width: "100%" }}>
                 <CarouselContent>
                   <CarouselItem>
-                    <img src={Expense1} style={{ width: "100%" }} />
+                    <img src={Expense1} style={{ width: "100%" }} loading="lazy"/>
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={Expense2} style={{ width: "100%" }} />
+                    <img src={Expense2} style={{ width: "100%" }} loading="lazy"/>
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={Expense3} style={{ width: "100%" }} />
+                    <img src={Expense3} style={{ width: "100%" }} loading="lazy"/>
                   </CarouselItem>
 
                   <CarouselItem>
-                    <img src={Expense4} style={{ width: "100%" }} />
+                    <img src={Expense4} style={{ width: "100%" }} loading="lazy"/>
                   </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious />

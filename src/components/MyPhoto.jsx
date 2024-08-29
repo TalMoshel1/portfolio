@@ -36,7 +36,7 @@ const MyPhoto = () => {
 
   return (
     <ImgContainer>
-      <img src={Me} />
+      <img src={Me} loading="lazy"/>
     </ImgContainer>
   );
 };
