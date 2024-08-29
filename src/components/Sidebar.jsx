@@ -17,7 +17,7 @@ const Ul = styled.ul`
   margin-block-start: 0em;
   margin-block-end: 0em;
   padding-inline-start: 0px;
-  width: 50vw;
+  width: 25vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -51,7 +51,7 @@ const Nav = styled.nav`
 
       @media (orientation: portrait) {
     & {
-        left: -51vw;
+        left: -20vw;
 
     }
   }
