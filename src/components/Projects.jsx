@@ -68,7 +68,7 @@ const Projects = (props) => {
                 * Full Stack App
                 <br />
                 * Demo Version: <br />
-                <a>https://appointment-front-5jsl.onrender.com/home</a>
+                <a href='https://shorturl.at/9DkRi'>Live</a>
               </p>
 
               <Carousel style={{ width: "100%" }}>
@@ -120,7 +120,7 @@ const Projects = (props) => {
                 <br />
                 * Test your Music Theory Knowledge
                 <br />
-                <a>https://music-trivia-frontend.onrender.com/</a>
+                <a href='https://shorturl.at/7hDef'>Live</a>
               </p>
 
               <Carousel style={{ width: "100%",position: 'relative' }}>
@@ -171,7 +171,7 @@ const Projects = (props) => {
                 * Front End App * Using GeoLocation API, Google Location API *
                 Custom Hooks
                 <br/>
-                <a>https://createweatherapp2.onrender.com/</a>
+                <a href='https://shorturl.at/1D7X0'>Live</a>
               </p>
 
               <Carousel style={{ width: "100%"}}>
@@ -223,7 +223,7 @@ const Projects = (props) => {
               >
                 * Front End App
                 <br/>
-                <a>https://expense-tracker-front-1.onrender.com/</a>
+                <a href='https://shorturl.at/xfVRL'>Live</a>
               </p>
 
               <Carousel style={{ width: "100%" }}>
