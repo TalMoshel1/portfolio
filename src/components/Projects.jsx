@@ -148,7 +148,7 @@ const Projects = (props) => {
                   href="https://shorturl.at/7hDef"
                   onClick={(e) => {
                     e.preventDefault();
-                    window.open("https://shorturl.at/9DkRi", "_blank");
+                    window.open("https://shorturl.at/7hDef", "_blank");
                   }}
                 >
                   Live
@@ -208,7 +208,7 @@ const Projects = (props) => {
                   href="https://shorturl.at/1D7X0"
                   onClick={(e) => {
                     e.preventDefault();
-                    window.open("https://shorturl.at/9DkRi", "_blank");
+                    window.open("https://shorturl.at/1D7X0", "_blank");
                   }}
                 >
                   Live
@@ -291,7 +291,7 @@ const Projects = (props) => {
                 <a href="https://shorturl.at/xfVRL"
                   onClick={(e) => {
                     e.preventDefault();
-                    window.open("https://shorturl.at/9DkRi", "_blank");
+                    window.open("https://shorturl.at/xfVRL", "_blank");
                   }}>Live</a>
               </p>
 
