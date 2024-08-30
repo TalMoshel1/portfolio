@@ -45,14 +45,15 @@ const Nav = styled.nav`
     @media (orientation: landscape) {
     & {
         left: -25vw;
-
+        height: 100px
     }
   }
 
       @media (orientation: portrait) {
     & {
         left: -20vw;
-
+        height: 100px;
+      
     }
   }
 

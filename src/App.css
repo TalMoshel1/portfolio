@@ -102,6 +102,8 @@
 a {
   cursor: pointer;
   touch-action: manipulation;
+  pointer-events: auto;
+
 }
 
 
