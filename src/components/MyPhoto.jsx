@@ -28,6 +28,7 @@ const MyPhoto = () => {
 
     img {
       width: 100%;
+      height: 100%;
       position: relative;
       left: 0;
       right: 0;

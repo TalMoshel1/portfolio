@@ -56,7 +56,7 @@ const Home = (props) => {
 
       <MyPhoto/>
       <h1>Tal Moshel</h1>
-      <h2>I'm a Front End Developer</h2>
+      <h2>Web Developer</h2>
 
 
 

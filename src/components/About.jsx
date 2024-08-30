@@ -18,7 +18,7 @@ const About = (props) => {
       <MyPhoto />
       <div
         style={{
-          width: "50%", 
+          width: "90%", 
           maxWidth: "600px", // Optional: Adjust to fit your design needs
           backgroundColor: 'white',
           padding: "1rem",
