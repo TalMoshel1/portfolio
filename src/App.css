@@ -79,8 +79,8 @@
 @media (orientation: portrait) {
 
   .technologies-container {
-    height: 100svh;
-    
+    min-height: 100svh;
+
   }
   .icons-container {
     width: 90%;
