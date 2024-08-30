@@ -85,7 +85,12 @@ const Projects = (props) => {
                 * Full Stack App
                 <br />
                 * Demo Version: <br />
-                <a href="https://shorturl.at/9DkRi">Live</a>
+                <a href="https://shorturl.at/9DkRi"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open("https://shorturl.at/9DkRi", "_blank");
+                  }}
+                  >Live</a>
               </p>
 
               {/* <Carousel style={{ width: "100%" }}>
@@ -139,7 +144,15 @@ const Projects = (props) => {
                 <br />
                 * Test your Music Theory Knowledge
                 <br />
-                <a href="https://shorturl.at/7hDef">Live</a>
+                <a
+                  href="https://shorturl.at/7hDef"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open("https://shorturl.at/9DkRi", "_blank");
+                  }}
+                >
+                  Live
+                </a>
               </p>
 
               {/* <Carousel style={{ width: "100%",position: 'relative' }}>
@@ -191,7 +204,15 @@ const Projects = (props) => {
                 * Front End App * Using GeoLocation API, Google Location API *
                 Custom Hooks
                 <br />
-                <a href="https://shorturl.at/1D7X0">Live</a>
+                <a
+                  href="https://shorturl.at/1D7X0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open("https://shorturl.at/9DkRi", "_blank");
+                  }}
+                >
+                  Live
+                </a>
               </p>
 
               {/* <Carousel style={{ width: "100%" }}>
@@ -252,7 +273,7 @@ const Projects = (props) => {
                 fontSize: "1.5rem",
               }}
             >
-              Expanse Tracker
+              Expense Tracker
             </AccordionTrigger>
             <AccordionContent>
               <p
@@ -267,7 +288,11 @@ const Projects = (props) => {
               >
                 * Front End App
                 <br />
-                <a href="https://shorturl.at/xfVRL">Live</a>
+                <a href="https://shorturl.at/xfVRL"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open("https://shorturl.at/9DkRi", "_blank");
+                  }}>Live</a>
               </p>
 
               {/* <Carousel style={{ width: "100%" }}>
