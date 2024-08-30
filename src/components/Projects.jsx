@@ -86,10 +86,7 @@ const Projects = (props) => {
                 <br />
                 * Demo Version: <br />
                 <a href="https://shorturl.at/9DkRi"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open("https://shorturl.at/9DkRi", "_blank");
-                  }}
+                    onTouchStart={(e) => e.preventDefault()} 
                   >Live</a>
               </p>
 
@@ -146,10 +143,7 @@ const Projects = (props) => {
                 <br />
                 <a
                   href="https://shorturl.at/7hDef"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open("https://shorturl.at/7hDef", "_blank");
-                  }}
+                  onTouchStart={(e) => e.preventDefault()} 
                 >
                   Live
                 </a>
@@ -206,10 +200,7 @@ const Projects = (props) => {
                 <br />
                 <a
                   href="https://shorturl.at/1D7X0"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open("https://shorturl.at/1D7X0", "_blank");
-                  }}
+                  onTouchStart={(e) => e.preventDefault()} 
                 >
                   Live
                 </a>
@@ -289,10 +280,8 @@ const Projects = (props) => {
                 * Front End App
                 <br />
                 <a href="https://shorturl.at/xfVRL"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open("https://shorturl.at/xfVRL", "_blank");
-                  }}>Live</a>
+                    onTouchStart={(e) => e.preventDefault()} 
+                  >Live</a>
               </p>
 
               {/* <Carousel style={{ width: "100%" }}>
