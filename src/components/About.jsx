@@ -41,7 +41,8 @@ const About = (props) => {
         style={{
             borderRadius: 'var(--border-radius)',
             backgroundColor: 'gold',
-            width: 'max-content'
+            width: 'max-content',
+            marginTop:'1rem'
         }}
         >Download CV</button>
       </div>

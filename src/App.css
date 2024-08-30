@@ -60,7 +60,46 @@
   .accordion-container {
     width: 45%
   }
+
+  .icons-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .icons-container * {
+    margin-top:2rem;
+    width: 3rem;
+    height: 3rem;
+  }
 }
+
+@media (orientation: portrait) {
+
+  .technologies-container {
+    height: 100svh;
+    
+  }
+  .icons-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .icons-container * {
+    margin-top:2rem;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+
 
 
 
@@ -89,3 +128,4 @@
          flex-wrap:wrap; 
   }
 } */
+
