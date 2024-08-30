@@ -15,6 +15,8 @@ import {
 
 import "../App.css";
 
+import EmblaCarousel from "./embla/EmblaCarousel.jsx";
+
 import Appointment1 from "../photos/appointment1.png";
 import Appointment2 from "../photos/appointment2.png";
 import Appointment3 from "../photos/appointment3.png";
@@ -27,13 +29,28 @@ import Weather1 from "../photos/Weather1.png";
 import Weather1Dark from "../photos/weather1dark.png";
 import Weather2 from "../photos/weather2.png";
 import Weather2Dark from "../photos/weather2dark.png";
-import Expense1 from '../photos/expanse1.png'
-import Expense2 from '../photos/expanse2.png'
-import Expense3 from '../photos/expanse3.png'
-import Expense4 from '../photos/expanse4.png'
-
+import Expense1 from "../photos/expanse1.png";
+import Expense2 from "../photos/expanse2.png";
+import Expense3 from "../photos/expanse3.png";
+import Expense4 from "../photos/expanse4.png";
 
 const Projects = (props) => {
+  const OPTIONS = { loop: true };
+  const appointmentsPhotos = [
+    Appointment1,
+    Appointment2,
+    Appointment3,
+    Appointment4,
+  ];
+  const musicTriviaPhotos = [
+    MusicTrivia1,
+    MusicTrivia2,
+    MusicTrivia3,
+    MusicTrivia4,
+  ];
+  const ExpensePhotos = [Expense1, Expense2, Expense3, Expense4];
+  const weatherPhotos = [Weather1, Weather2, Weather1Dark, Weather2Dark];
+
   return (
     <main style={{ height: "100svh", width: "100%" }}>
       <h1 style={{ height: "20%", paddingTop: "2rem", paddingBottom: "2rem" }}>
@@ -52,7 +69,7 @@ const Projects = (props) => {
                 fontSize: "1.5rem",
               }}
             >
-              Appoontement Schedule
+              Appointment Schedule
             </AccordionTrigger>
             <AccordionContent>
               <p
@@ -68,10 +85,10 @@ const Projects = (props) => {
                 * Full Stack App
                 <br />
                 * Demo Version: <br />
-                <a href='https://shorturl.at/9DkRi'>Live</a>
+                <a href="https://shorturl.at/9DkRi">Live</a>
               </p>
 
-              <Carousel style={{ width: "100%" }}>
+              {/* <Carousel style={{ width: "100%" }}>
                 <CarouselContent className="contain-image">
                   <CarouselItem>
                     <img src={Appointment1} loading="lazy" />
@@ -89,7 +106,9 @@ const Projects = (props) => {
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
-              </Carousel>
+              </Carousel> */}
+
+              <EmblaCarousel slides={appointmentsPhotos} options={OPTIONS} />
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -120,10 +139,10 @@ const Projects = (props) => {
                 <br />
                 * Test your Music Theory Knowledge
                 <br />
-                <a href='https://shorturl.at/7hDef'>Live</a>
+                <a href="https://shorturl.at/7hDef">Live</a>
               </p>
 
-              <Carousel style={{ width: "100%",position: 'relative' }}>
+              {/* <Carousel style={{ width: "100%",position: 'relative' }}>
                 <div className="swipe" style={{position:'absolute', top:'0', backgroundColor:'rgba(0, 0, 0, 0.1)', height:'10px', zIndex: '1', width:'100%'}}></div>
                 <CarouselContent>
                   <CarouselItem>
@@ -141,7 +160,8 @@ const Projects = (props) => {
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
-              </Carousel>
+              </Carousel> */}
+              <EmblaCarousel slides={musicTriviaPhotos} options={OPTIONS} />
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -170,31 +190,55 @@ const Projects = (props) => {
               >
                 * Front End App * Using GeoLocation API, Google Location API *
                 Custom Hooks
-                <br/>
-                <a href='https://shorturl.at/1D7X0'>Live</a>
+                <br />
+                <a href="https://shorturl.at/1D7X0">Live</a>
               </p>
 
-              <Carousel style={{ width: "100%"}}>
-              <div className="swipe" style={{backgroundColor:'rgba(0, 0, 0, 0.5)', height:'10px', width:'100%'}}></div>
+              {/* <Carousel style={{ width: "100%" }}>
+                <div
+                  className="swipe"
+                  style={{
+                    backgroundColor: "rgba(0, 0, 0, 0.5)",
+                    height: "10px",
+                    width: "100%",
+                  }}
+                ></div>
 
                 <CarouselContent>
                   <CarouselItem>
-                    <img src={Weather1} style={{ width: "100%" }} loading="lazy" />
+                    <img
+                      src={Weather1}
+                      style={{ width: "100%" }}
+                      loading="lazy"
+                    />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={Weather1Dark} style={{ width: "100%" }} loading="lazy"/>
+                    <img
+                      src={Weather1Dark}
+                      style={{ width: "100%" }}
+                      loading="lazy"
+                    />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={Weather2} style={{ width: "100%" }} loading="lazy"/>
+                    <img
+                      src={Weather2}
+                      style={{ width: "100%" }}
+                      loading="lazy"
+                    />
                   </CarouselItem>
 
                   <CarouselItem>
-                    <img src={Weather2Dark} style={{ width: "100%" }} loading="lazy"/>
+                    <img
+                      src={Weather2Dark}
+                      style={{ width: "100%" }}
+                      loading="lazy"
+                    />
                   </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
-              </Carousel>
+              </Carousel> */}
+              <EmblaCarousel slides={weatherPhotos} options={OPTIONS} />
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -222,11 +266,11 @@ const Projects = (props) => {
                 }}
               >
                 * Front End App
-                <br/>
-                <a href='https://shorturl.at/xfVRL'>Live</a>
+                <br />
+                <a href="https://shorturl.at/xfVRL">Live</a>
               </p>
 
-              <Carousel style={{ width: "100%" }}>
+              {/* <Carousel style={{ width: "100%" }}>
                 <CarouselContent>
                   <CarouselItem>
                     <img src={Expense1} style={{ width: "100%" }} loading="lazy"/>
@@ -244,7 +288,8 @@ const Projects = (props) => {
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
-              </Carousel>
+              </Carousel> */}
+              <EmblaCarousel slides={ExpensePhotos} options={OPTIONS} />
             </AccordionContent>
           </AccordionItem>
         </Accordion>
