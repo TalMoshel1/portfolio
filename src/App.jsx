@@ -11,7 +11,7 @@ function App() {
     <>
       {/* <Scroll /> */}
       <Sidebar />
-      <Home />
+      {/* <Home /> */}
       <About />
       <Technologies/>
       <Projects/>

@@ -48,15 +48,12 @@ const ImgContainer = styled.div`
 const Home = (props) => {
   return (
     <HomeContainer>
-      {/* <AnimateMusicSvg /> */}
-
-      {/* <ImgContainer>
-        <img src={Me} />
-      </ImgContainer> */}
-
       <MyPhoto/>
       <h1>Tal Moshel</h1>
       <h2>Web Developer</h2>
+      <p style={{marginBlockStart: '0em'}}>
+          I am Tal Moshel, web developer from Herzeliya, Israel. 
+        </p>
 
 
 

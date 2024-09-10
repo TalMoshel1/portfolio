@@ -17,10 +17,14 @@ import "../App.css";
 
 import EmblaCarousel from "./embla/EmblaCarousel.jsx";
 
-import Appointment1 from "../photos/appointment1.png";
-import Appointment2 from "../photos/appointment2.png";
-import Appointment3 from "../photos/appointment3.png";
-import Appointment4 from "../photos/appointment4.png";
+import Appointment1 from "../photos/schedule1.png";
+import Appointment2 from "../photos/schedule2.png";
+import Appointment3 from "../photos/schedule3.png";
+import Appointment4 from "../photos/schedule4.png";
+import Appointment5 from "../photos/schedule5.png";
+import Appointment6 from "../photos/schedule6.png";
+import Appointment7 from "../photos/schedule7.png";
+
 import MusicTrivia1 from "../photos/MusicTrivia1.png";
 import MusicTrivia2 from "../photos/MusicTrivia2.png";
 import MusicTrivia3 from "../photos/MusicTrivia3.png";
@@ -34,6 +38,7 @@ import Expense2 from "../photos/expanse2.png";
 import Expense3 from "../photos/expanse3.png";
 import Expense4 from "../photos/expanse4.png";
 
+
 const Projects = (props) => {
   const OPTIONS = { loop: true };
   const appointmentsPhotos = [
@@ -41,6 +46,9 @@ const Projects = (props) => {
     Appointment2,
     Appointment3,
     Appointment4,
+    Appointment5,
+    Appointment6,
+    Appointment7
   ];
   const musicTriviaPhotos = [
     MusicTrivia1,
@@ -67,11 +75,12 @@ const Projects = (props) => {
                 textAlign: "center",
                 height: "7.1rem",
                 fontSize: "1.5rem",
+                backgroundColor:'#f9f9f9'
               }}
             >
               Appointment Schedule
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent style={{backgroundColor: 'white'}}>
               <p
                 className="p-accordion-height"
                 style={{
@@ -110,7 +119,7 @@ const Projects = (props) => {
                 <CarouselNext />
               </Carousel> */}
 
-              <EmblaCarousel slides={appointmentsPhotos} options={OPTIONS} />
+              <EmblaCarousel slides={appointmentsPhotos} options={OPTIONS} style={{backgroundColor: 'white'}} />
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -122,6 +131,8 @@ const Projects = (props) => {
                 textAlign: "center",
                 height: "7.1rem",
                 fontSize: "1.5rem",
+                backgroundColor:'#f9f9f9'
+
               }}
             >
               Music Trivia
@@ -180,6 +191,8 @@ const Projects = (props) => {
                 textAlign: "center",
                 height: "7.1rem",
                 fontSize: "1.5rem",
+                backgroundColor:'#f9f9f9'
+
               }}
             >
               Weather App
@@ -262,6 +275,8 @@ const Projects = (props) => {
                 textAlign: "center",
                 height: "7.1rem",
                 fontSize: "1.5rem",
+                backgroundColor:'#f9f9f9'
+
               }}
             >
               Expense Tracker
@@ -284,25 +299,6 @@ const Projects = (props) => {
                   >Live</a>
               </p>
 
-              {/* <Carousel style={{ width: "100%" }}>
-                <CarouselContent>
-                  <CarouselItem>
-                    <img src={Expense1} style={{ width: "100%" }} loading="lazy"/>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={Expense2} style={{ width: "100%" }} loading="lazy"/>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={Expense3} style={{ width: "100%" }} loading="lazy"/>
-                  </CarouselItem>
-
-                  <CarouselItem>
-                    <img src={Expense4} style={{ width: "100%" }} loading="lazy"/>
-                  </CarouselItem>
-                </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
-              </Carousel> */}
               <EmblaCarousel slides={ExpensePhotos} options={OPTIONS} />
             </AccordionContent>
           </AccordionItem>

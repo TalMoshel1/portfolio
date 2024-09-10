@@ -33,8 +33,7 @@ const About = (props) => {
         }}
       >
         <p style={{marginBlockStart: '0em'}}>
-          I am Tal Moshel, web developer from Tel Aviv, Israel. Experienced in
-          React, Node.js, HTML, CSS.
+          Hi, I am Tal Moshel, web developer from Herzeliya, Israel. 
         </p>
 
         <button
