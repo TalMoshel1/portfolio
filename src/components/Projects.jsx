@@ -65,7 +65,6 @@ const Projects = (props) => {
       </h1>
       <section
         className="accordions-container"
-        // style={{height:'fit-content', boxSizing:'border-box', width: '100vw', justifyContent:'space-evenly', display:'flex', flexWrap:'wrap'}}
       >
         <Accordion type="single" collapsible className="accordion-container">
           <AccordionItem value="item-1">
