@@ -32,7 +32,7 @@ const ImgContainer = styled.div`
 
   @media (orientation: landscape) {
     & {
-      width: 50%;
+      width: 45%;
       height: 30%;
     }
   }

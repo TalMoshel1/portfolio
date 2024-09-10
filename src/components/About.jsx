@@ -1,6 +1,19 @@
 import React from "react";
 import MyPhoto from "./MyPhoto";
 import '../App.css'
+import styled from "styled-components";
+
+const Paragraph = styled.p`
+text-align: center;
+@media (orientation: landscape) {
+  width: 30%;
+  
+}
+
+@ (orientation: portrait) {
+  width: 50%;
+}
+`
 
 
 const About = (props) => {
@@ -30,11 +43,12 @@ const About = (props) => {
           borderRadius: 'var(--border-radius)',
           display:'flex',
           flexDirection: 'column',
+          alignItems: 'center'
         }}
       >
-        <p style={{marginBlockStart: '0em'}}>
+        <Paragraph style={{marginBlockStart: '0em'}}>
           Hi, I am Tal Moshel, web developer from Herzeliya, Israel. 
-        </p>
+        </Paragraph>
 
         <button
         style={{

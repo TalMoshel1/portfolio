@@ -15,7 +15,7 @@ const MyPhoto = () => {
     @media (orientation: landscape) {
       & {
         width: 30%;
-        height: 50%;
+        height: 40%;
       }
     }
 

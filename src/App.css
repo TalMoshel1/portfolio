@@ -49,9 +49,11 @@
   .accordions-container {
     height:fit-content;
      box-sizing:border-box;
-      width: 90%;
-      margin-left: 5%;
-      margin-right: 5%;
+     min-height: '100svh';
+     background-color: white;
+      width: 100%;
+      /* margin-left: 5%;
+      margin-right: 5%; */
        justify-content: space-evenly;
         display:flex;
          flex-wrap:wrap; 
@@ -63,8 +65,8 @@
 
   .icons-container {
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    /* margin-left: 5%;
+    margin-right: 5%; */
     display: flex;
     justify-content: space-evenly;
   }
@@ -75,13 +77,20 @@
     height: 3rem;
   }
 }
+.technologies-container {
+  min-height: 100svh;
+  position:relative;
 
+}
+.icons-container {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%)
+}
 @media (orientation: portrait) {
 
-  .technologies-container {
-    min-height: 100svh;
 
-  }
   .icons-container {
     width: 90%;
     margin-left: 5%;
@@ -107,7 +116,7 @@ a {
 }
 
 
-.pb-4, .pt-0, .embla, .embla__controls, .accordion-container {
+.pb-4, .pt-0, .embla, .embla__controls, .accordion-container, .accordions-container {
   background-color: white;
 }
 

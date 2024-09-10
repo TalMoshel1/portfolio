@@ -16,7 +16,6 @@ import {
 import "../App.css";
 
 import EmblaCarousel from "./embla/EmblaCarousel.jsx";
-
 import Appointment1 from "../photos/schedule1.png";
 import Appointment2 from "../photos/schedule2.png";
 import Appointment3 from "../photos/schedule3.png";
@@ -60,7 +59,7 @@ const Projects = (props) => {
   const weatherPhotos = [Weather1, Weather2, Weather1Dark, Weather2Dark];
 
   return (
-    <main style={{ height: "100svh", width: "100%" }}>
+    <main style={{ minHeight: "100svh", width: "100%" }}>
       <h1 style={{ height: "20%", paddingTop: "2rem", paddingBottom: "2rem" }}>
         Projects
       </h1>
