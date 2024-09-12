@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       {/* <Scroll /> */}
-      <Sidebar />
+      {/* <Sidebar /> */}
       {/* <Home /> */}
       <About />
       <Technologies/>

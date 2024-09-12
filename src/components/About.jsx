@@ -24,8 +24,9 @@ const About = (props) => {
         height: "100vh", 
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-evenly",
+        justifyContent: "center",
         alignItems: "center",
+        gap:'1rem'
       }}
     >
       <MyPhoto />
@@ -50,14 +51,14 @@ const About = (props) => {
           Hi, I am Tal Moshel, web developer from Herzeliya, Israel. 
         </Paragraph>
 
-        <button
+        {/* <button
         style={{
             borderRadius: 'var(--border-radius)',
             backgroundColor: 'gold',
             width: 'max-content',
             marginTop:'1rem'
         }}
-        >Download CV</button>
+        >Download CV</button> */}
       </div>
     </section>
   );
