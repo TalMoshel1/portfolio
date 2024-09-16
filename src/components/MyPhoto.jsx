@@ -4,8 +4,9 @@ import styled from "styled-components";
 import Me from '../../public/photos/me.jpeg'
 
 const ImgContainer = styled.div`
-  width: 30vw; // Use viewport width for consistent sizing
-  height: 30vw; // Set height based on viewport width
+  width: 30vw; 
+  height: 30vw;
+  min-height: 30vh;
   overflow: hidden;
   border: 20px solid silver;
   border-radius: 100%;
@@ -15,6 +16,8 @@ const ImgContainer = styled.div`
   @media (orientation: portrait) {
     width: 50vw; // Adjust size for portrait mode
     height: 50vw;
+    min-height: 50vh;
+
   }
 
   img {
