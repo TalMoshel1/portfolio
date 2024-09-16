@@ -10,7 +10,7 @@ text-align: center;
   
 }
 
-@ (orientation: portrait) {
+@nedia (orientation: portrait) {
   width: 50%;
 }
 `
