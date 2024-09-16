@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Me from "../photos/me.jpeg";
+// import Me from "../photos/me.jpeg";
+import Me from '../../public/photos/me.jpeg'
 
 const ImgContainer = styled.div`
   width: 30vw; // Use viewport width for consistent sizing
