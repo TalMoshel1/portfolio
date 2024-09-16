@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Me from "../photos/me.jpeg";
 
 const ImgContainer = styled.div`
-  width: 50%;
+  width: 30%;
   aspect-ratio: 1 / 1; // Ensures it stays a perfect circle
   overflow: hidden;
   border: 20px solid silver;
@@ -11,9 +11,9 @@ const ImgContainer = styled.div`
   box-shadow: 2px 20px 12px -14px;
   margin-bottom: 1rem;
 
-  @media (orientation: landscape) {
-    width: 30%; // Adjusts size for landscape
-  }
+  // @media (orientation: landscape) {
+  //   width: 30%;
+  // }
 
   @media (orientation: portrait) {
     width: 50%; // Adjusts size for portrait
