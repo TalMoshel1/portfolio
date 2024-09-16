@@ -3,10 +3,8 @@ import styled from "styled-components";
 import Me from "../photos/me.jpeg";
 
 const ImgContainer = styled.div`
-  width: 30%;
-  min-width: 30%; // Ensures it doesn't shrink below 30%
-  height: auto;
-  aspect-ratio: 1 / 1; // Ensures it stays a perfect circle
+  width: 30vw; // Use viewport width for consistent sizing
+  height: 30vw; // Set height based on viewport width
   overflow: hidden;
   border: 20px solid silver;
   border-radius: 100%;
@@ -14,19 +12,16 @@ const ImgContainer = styled.div`
   margin-bottom: 1rem;
 
   @media (orientation: portrait) {
-    width: 50%; // Adjusts size for portrait
-    min-width: 50%; // Ensures it stays at 50% in portrait
+    width: 50vw; // Adjust size for portrait mode
+    height: 50vw;
   }
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover; // Ensures image covers the container while keeping its aspect ratio
-    position: relative;
+    object-fit: cover;
   }
 `;
-
-
 const MyPhoto = () => {
   return (
     <ImgContainer>
