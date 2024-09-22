@@ -10,7 +10,7 @@ const ImgContainer = styled.div`
   overflow: hidden;
   border: 20px solid silver;
   border-radius: 100%;
-  box-shadow: 2px 20px 12px -14px;
+  // box-shadow: 2px 20px 12px -14px;
   margin-bottom: 1rem;
 
   @media (orientation: portrait) {
