@@ -14,7 +14,7 @@ const ImgContainer = styled.div`
   margin-bottom: 1rem;
 
   @media (orientation: portrait) {
-    width: 50vw; // Adjust size for portrait mode
+    width: 90vw; // Adjust size for portrait mode
     height: 50vw;
     min-height: 50vh;
 
