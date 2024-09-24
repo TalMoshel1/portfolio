@@ -35,7 +35,7 @@ const Projects = (props) => {
   ];
   const musicTriviaPhotos = [MusicTrivia1, MusicTrivia2, MusicTrivia3];
   const expensePhotos = [Expense1, Expense2, Expense3];
-  const weatherPhotos = [Weather1, Weather2, Weather3, Weather4];
+  const weatherPhotos = [Weather2, Weather1, Weather3, Weather4];
 
   return (
     <main style={{ minHeight: "100svh", width: "100%" }}>
