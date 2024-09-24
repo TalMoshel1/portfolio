@@ -31,7 +31,7 @@ const EmblaCarousel = (props) => {
           {slides.map((img, index) => (
             <div className="embla__slide" key={index}>
               <div className="embla__slide__number">
-              <img src={img} style={{ width: "100%" }} />
+              <img src={img} style={{ width: "100% !important", height: '100% !important' }} />
               </div>
             </div>
           ))}
