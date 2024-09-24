@@ -104,7 +104,7 @@ function App() {
 
 
 
-      <footer className="bg-gray-900 text-center py-6">
+      <footer className="bg-gray-900 text-center py-6" style={{width: '100vw'}}>
         <p className="text-gray-400">
           &copy; 2024 Tal Moshel. All rights reserved.
         </p>

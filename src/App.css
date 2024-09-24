@@ -1,10 +1,7 @@
 
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
   text-align: center;
-
 }
 
 .logo {
@@ -138,8 +135,8 @@ margin-bottom: 3.5rem;
   top:50%;
   left:50%;
   transform: translate(-50%, -50%) */
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .project-container {
@@ -254,28 +251,4 @@ p {
   font-size: 2rem !important;
 }
 
-/* @media (orientation: portrait) {
-  .accordion-container {
-    border:1px solid red;
-    width: 90%;
-    display:flex;
-    justify-content:center;
-    margin-right: 5%;
-    margin-left: 5%;
-  }
-
-    .accordion-container *:not(.contain-image) {
-    width: 100%;
-  }
-
-  .accordions-container {
-    height:fit-content;
-     box-sizing:border-box;
-      width: 100%;
-       justify-content: space-evenly;
-        display:flex;
-        flex-direction: column;
-         flex-wrap:wrap; 
-  }
-} */
 
