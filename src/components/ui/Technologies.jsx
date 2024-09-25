@@ -4,6 +4,11 @@ import { FaReact, FaCss3Alt, FaPython, FaGit, FaJs } from "react-icons/fa";
 import { LiaNode } from "react-icons/lia";
 import { SiTypescript } from "react-icons/si";
 import { IoLogoHtml5 } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { TbBrandMysql } from "react-icons/tb";
+import { BiLogoMongodb } from "react-icons/bi";
+
+
 import '../../App.css';
 import { useInView } from "react-intersection-observer";
 
@@ -50,7 +55,11 @@ const Technologies = (props) => {
         <IoLogoHtml5 fill="#E64C18" size={50} />
         <FaReact fill="#61DBFB" size={50} />
         <FaCss3Alt fill="#2091EB" size={50} />
+        <RiTailwindCssFill fill='#36B7F0' size={50}/>
         <FaGit fill="#E84D31" size={50} />
+        <BiLogoMongodb fill='#4DA53F' size={50}/>
+        <TbBrandMysql fill='#42759C' size={50}/>
+
       </motion.div>
     </motion.section>
   );

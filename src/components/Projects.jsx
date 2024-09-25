@@ -1,11 +1,6 @@
 import React from "react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import EmblaCarousel from "./embla/EmblaCarousel.jsx";
+import { motion } from "framer-motion"; // Import motion from Framer Motion
 import Appointment1 from "../../public/photos/appointment-admin-calendar.png";
 import Appointment2 from "../../public/photos/appointment-admin-requestGroup.png";
 import Appointment3 from "../../public/photos/appointment-front-calendar.png";
@@ -24,7 +19,7 @@ import Weather4 from "../../public/photos/weatherApp2.png";
 
 import "../App.css";
 
-const Projects = (props) => {
+const Projects = () => {
   const OPTIONS = { loop: true };
   const appointmentsPhotos = [
     Appointment1,
@@ -49,52 +44,14 @@ const Projects = (props) => {
       >
         Projects
       </h1>
-      <section className="accordions-container">
-        {/* <Accordion type="single" collapsible className="accordion-container">
-          <AccordionItem value="item-1">
-            <AccordionTrigger
-              style={{
-                textAlign: "center",
-                height: "7.1rem",
-                fontSize: "1.5rem",
-                backgroundColor: "#f9f9f9",
-              }}
-            >
-              Appointment Schedule
-            </AccordionTrigger>
-            <AccordionContent style={{ backgroundColor: "white" }}>
-              <p
-                className="p-accordion-height"
-                style={{
-                  paddingTop: "1rem",
-                  paddingBottom: "1rem",
-                  textAlign: "left",
-                  paddingLeft: "1.6rem",
-                  paddingRight: "1.6rem",
-                }}
-              >
-                * Full Stack App
-                <br />
-                * Demo Version: <br />
-                <a
-                  href="https://appointment-front-5jsl.onrender.com/calendar"
-                  onTouchStart={(e) => e.preventDefault()}
-                >
-                  Live Client Site
-                </a>
-                <br />
-                <a
-                  href="https://appointment-admin-6f1y.onrender.com/calendar"
-                  onTouchStart={(e) => e.preventDefault()}
-                >
-                  Live Admin Site
-                </a>
-              </p>
-              <EmblaCarousel slides={appointmentsPhotos} options={OPTIONS} />
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion> */}
 
+      <motion.section
+        className="accordions-container"
+        initial={{ opacity: 0, y: 50 }} // Initially invisible and slightly down
+        whileInView={{ opacity: 1, y: 0 }} // Become visible and rise up
+        transition={{ duration: 0.5 }} // Animation duration
+      >
+        {/* Project 1 */}
         <div className="project-container">
           <p
             className="p-accordion-height"
@@ -132,6 +89,7 @@ const Projects = (props) => {
           <EmblaCarousel slides={appointmentsPhotos} options={OPTIONS} />
         </div>
 
+        {/* Project 2 */}
         <div className="project-container">
           <p
             className="p-accordion-height"
@@ -163,6 +121,7 @@ const Projects = (props) => {
           <EmblaCarousel slides={musicTriviaPhotos} options={OPTIONS} />
         </div>
 
+        {/* Project 3 */}
         <div className="project-container">
           <p
             className="p-accordion-height"
@@ -196,41 +155,7 @@ const Projects = (props) => {
           <EmblaCarousel slides={weatherPhotos} options={OPTIONS} />
         </div>
 
-        {/* 
-        <Accordion type="single" collapsible className="accordion-container">
-          <AccordionItem value="item-4">
-            <AccordionTrigger
-              style={{
-                textAlign: "center",
-                height: "7.1rem",
-                fontSize: "1.5rem",
-                backgroundColor: "#f9f9f9",
-              }}
-            >
-              Expense Tracker
-            </AccordionTrigger>
-            <AccordionContent>
-              <p
-                className="p-accordion-height"
-                style={{
-                  paddingTop: "1rem",
-                  paddingBottom: "1rem",
-                  textAlign: "left",
-                  paddingLeft: "1.6rem",
-                  paddingRight: "1.6rem",
-                }}
-              >
-                * Front End App
-                <br />
-                <a href="https://shorturl.at/xfVRL" onTouchStart={(e) => e.preventDefault()}>
-                  Live
-                </a>
-              </p>
-              <EmblaCarousel slides={expensePhotos} options={OPTIONS} />
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion> */}
-
+        {/* Project 4 */}
         <div className="project-container">
           <p
             className="p-accordion-height"
@@ -259,7 +184,7 @@ const Projects = (props) => {
           </p>
           <EmblaCarousel slides={expensePhotos} options={OPTIONS} />
         </div>
-      </section>
+      </motion.section>
     </main>
   );
 };
