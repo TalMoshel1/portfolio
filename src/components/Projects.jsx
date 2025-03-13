@@ -51,7 +51,6 @@ const Projects = () => {
         whileInView={{ opacity: 1, y: 0 }} // Become visible and rise up
         transition={{ duration: 0.5 }} // Animation duration
       >
-        {/* Project 1 */}
         <div className="project-container">
           <p
             className="p-accordion-height"
@@ -73,7 +72,7 @@ const Projects = () => {
             <br />
             Demo Version: <br />
             <a
-              href="https://appointment-front-5jsl.onrender.com/calendar"
+              href="https://appointment-front-vagx.onrender.com/"
               onTouchStart={(e) => e.preventDefault()}
             >
               Live Client Site
@@ -121,39 +120,7 @@ const Projects = () => {
           <EmblaCarousel slides={musicTriviaPhotos} options={OPTIONS} />
         </div>
 
-        {/* Project 3 */}
-        <div className="project-container">
-          <p
-            className="p-accordion-height"
-            style={{
-              paddingTop: "1rem",
-              paddingBottom: "1rem",
-            }}
-          >
-            <h2
-              style={{
-                fontWeight: "800",
-                fontSize: "3rem",
-                marginBottom: "1rem",
-              }}
-            >
-              Weather App
-            </h2>
-            <span style={{ fontWeight: "800" }}>Front End App</span>
-            <br />
-            Using GeoLocation API and Google Location API
-            <br />
-            Custom Hooks
-            <br />
-            <a
-              href="https://shorturl.at/1D7X0"
-              onTouchStart={(e) => e.preventDefault()}
-            >
-              Live
-            </a>
-          </p>
-          <EmblaCarousel slides={weatherPhotos} options={OPTIONS} />
-        </div>
+        
 
         {/* Project 4 */}
         <div className="project-container">
